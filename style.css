@@ -1,0 +1,79 @@
+/* Estilo general */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #ffe6f0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Contenedor principal */
+.container {
+    background: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 90%;
+    max-width: 400px;
+    border: 2px solid #ff99cc;
+}
+
+/* Títulos */
+h1 {
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: #d63384;
+    font-weight: 700;
+}
+
+/* Botón */
+button {
+    background: #ff99cc;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 16px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+    background: #d63384;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
+}
+
+button:focus {
+    outline: none;
+    border: 2px solid #ff99cc;
+}
+
+/* Efecto contenedor */
+.container:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Efecto animado */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.container {
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+/* Fuentes externas */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
